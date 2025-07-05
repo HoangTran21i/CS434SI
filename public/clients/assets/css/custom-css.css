@@ -1,0 +1,731 @@
+.datetimepicker-custom {
+    padding: 0;
+}
+
+.datetimepicker-custom:focus {
+    border: none;
+}
+
+.main-header.header-one .main-menu .navbar-collapse .navigation .active {
+    background: var(--primary-color);
+}
+
+/* Style for dropdown for login */
+.menu-sidebar .dropdown-menu {
+    padding: 0;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+    list-style-type: none;
+    position: absolute;
+    top: 60px; /* Adjust to the correct position */
+    right: 0;
+}
+.menu-sidebar .dropdown-menu {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm box-shadow */
+}
+.dropdown-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+/* Loại bỏ đường viền dưới cho mục cuối cùng */
+.dropdown-menu li:last-child {
+    border-bottom: none; /* Không có đường viền dưới cho mục cuối cùng */
+}
+.dropdown-menu li:hover {
+    background-color: var(--primary-color);
+}
+
+/* css tour in page home  */
+.block_tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* css tourdetail  */
+.tour-gallery .gallery-between {
+    height: 100%;
+    padding-bottom: 10px;
+}
+.tour-gallery .gallery-item img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+/****************************************
+*              PAGE TOURS              *
+* ***************************************/
+.div_filter_clear {
+    display: flex;
+    justify-content: end;
+}
+.clear_filter {
+    color: #fff;
+    background-color: var(--bs-green);
+    border-radius: 8px;
+    padding: 2px 20px;
+}
+
+.loader {
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid green;
+    border-bottom: 16px solid green;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden-content {
+    display: none; /* Ẩn nội dung */
+}
+.equal-block-fix {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+}
+.equal-content-fix {
+    justify-content: space-around;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+/****************************************
+*              PAGE USER PROFILE        *
+* ***************************************/
+#card_change_password {
+    display: none;
+}
+
+/****************************************
+*              PAGE CHECKOUT            *
+* ***************************************/
+.booking-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.booking-container {
+    .booking__infor {
+        background-color: #f6f8fa;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: none;
+        gap: 16px;
+        padding: 30px;
+    }
+
+    .booking-info {
+        flex: 1;
+    }
+
+    .booking-summary {
+        width: 400px;
+    }
+
+    /* Header */
+    .booking-header {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    /* Form Styling */
+
+    .booking__infor .form-group label {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .booking__infor .form-group input {
+        width: 100%;
+        height: 56px;
+        padding: 16px 17px;
+        font-size: 1rem;
+        border: 0px solid #e2e4e5;
+        border-radius: 5px;
+    }
+
+    /* Quantity Selector */
+    .booking__quantity {
+        display: flex;
+        gap: 24px;
+    }
+
+    .quantity-selector {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        border: 1px solid #e2e4e5;
+        padding: 20px;
+        justify-content: space-between;
+        gap: 48px;
+    }
+
+    .input__quanlity {
+        display: flex;
+        gap: 16px;
+    }
+
+    .quantity-btn {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 2px solid #63ab45;
+        color: #63ab45;
+    }
+
+    .quantity-input {
+        padding: 0;
+        width: 30px;
+        text-align: center;
+        border: none;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: 0em;
+        font-weight: 500;
+        color: #63ab45;
+    }
+
+    /* Payment Options */
+    .payment-option {
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 1px solid #e2e4e5;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .payment-option img {
+        width: 40px;
+    }
+
+    /* Privacy Agreement */
+    .privacy-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+    }
+
+    .privacy-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    /* Order Summary */
+    .order-summary {
+        border-top: 1px solid #d6d6d6;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .summary-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .total-price,
+    .total-price-booked,
+    .quantity__adults,
+    .quantity__children,
+    .quantity__adults-booked,
+    .quantity__children-booked {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    /* Button */
+    .booking-btn {
+        width: 100%;
+        padding: 15px;
+        background-color: var(--secondary-color);
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .summary-section {
+        padding: 16px;
+        box-shadow: 10px 10px 36px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 50px;
+    }
+    .order-coupon {
+        border-top: 1px solid #d6d6d6;
+        margin: 20px 0;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .order-coupon input {
+        border-radius: 8px;
+        border: 1px solid #e2e4e5;
+    }
+    .btn-submit-booking.inactive {
+        background-color: #f3d5b1;
+        cursor: not-allowed;
+    }
+
+    /* CSS cho thông báo lỗi */
+    .error-message {
+        color: red;
+        font-size: 0.9em;
+        display: none;
+        margin-top: 5px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .booking-summary {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.comment-review-wrap .comment-ratting-item .ratting i {
+    font-size: 36px;
+}
+.ratting i.active {
+    color: var(--secondary-color);
+}
+
+/****************************************
+*             DESTINATION               *
+* ***************************************/
+.tour-title {
+    height: 40px;
+    line-height: 1.2;
+    overflow: hidden; /* Hide any text that overflows */
+    text-overflow: ellipsis; /* Display "..." if text overflows */
+    white-space: nowrap;
+}
+
+/****************************************
+*             HANDLE SEARCH            *
+* ***************************************/
+#search_form .list {
+    width: 100%;
+    height: 250px;
+    overflow-y: auto;
+}
+/****************************************
+*             TOUR BOOKED            *
+* ***************************************/
+.truncate-3-lines {
+    display: -webkit-box; /* Sử dụng Flexbox để xử lý text */
+    -webkit-line-clamp: 3; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical; /* Thiết lập hướng xử lý theo chiều dọc */
+    overflow: hidden; /* Ẩn phần nội dung vượt quá */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm vào cuối */
+    word-break: break-word; /* Đảm bảo từ không bị tràn ra ngoài */
+}
+
+/****************************************
+*           MODAL SHARE TOUR            *
+* ***************************************/
+/* Hiển thị modal ở giữa màn hình */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nội dung modal */
+.modal-content {
+    position: relative;
+    padding: 20px;
+}
+
+/* Dấu tắt modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Nút chia sẻ */
+.share-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.messenger {
+    background: #0099ff;
+}
+
+.instagram {
+    background: #e4405f;
+}
+
+/* Nút sao chép */
+#copyLink {
+    padding: 10px;
+    font-size: 16px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#copyLink:hover {
+    background: #e68900;
+}
+
+.wishlist-btn.active {
+    color: red;
+    font-weight: bold;
+}
+
+/****************************************
+*           WEATHER FORECAST            *
+* ***************************************/
+.weather-container {
+    overflow-x: auto;
+    padding: 0 20px;
+}
+
+.weather-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.weather-title::before,
+.weather-title::after {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1px solid #000; /* Chỉnh màu đường line ở đây */
+    margin: 0 10px;
+}
+
+.weather-row {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.weather-info {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease;
+}
+
+.weather-info:hover {
+    transform: translateY(-5px);
+}
+
+.weather-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.weather-info h5 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.weather-info p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+/****************************************
+*                 CHATBOT               *
+* ***************************************/
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#chatbot-header {
+    background-color: #f7921e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+#chatbot-body {
+    display: none;
+    background-color: white;
+    border: 1px solid #f7921e;
+    border-radius: 0 0 10px 10px; /* Góc bo tròn phía dưới */
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#chatbot-messages {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    width: 300px;
+}
+
+.chatbot-input-container {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#chatbot-input {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chatbot-send {
+    width: 18%;
+    background-color: #f7921e;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Khung bao quanh các lựa chọn */
+.chatbot-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f7921e; /* Màu viền */
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Màu nền */
+    margin-top: 10px;
+    width: 70%; /* Độ rộng khung */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nút lựa chọn */
+.chatbot-option {
+    margin: 5px 0; /* Khoảng cách giữa các nút */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; /* Độ rộng nút */
+    text-align: center;
+}
+
+/* Màu sắc cho từng nút */
+.chatbot-option[data-option="contact"] {
+    background-color: #ddd;
+    color: black;
+}
+
+.chatbot-option[data-option="discount"] {
+    background-color: #ddd;
+    color: black;
+}
+
+.chatbot-option[data-option="booking"] {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hiệu ứng hover */
+.chatbot-option:hover {
+    opacity: 0.9;
+}
+
+/****************************************
+*                 Careers               *
+* ***************************************/
+/* Careers Page Styling */
+.careers-page {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.careers-page .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.careers-page .section-title p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.careers-page .form-group {
+    margin-bottom: 20px;
+}
+
+.careers-page .form-group label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.careers-page .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #555;
+    width: 100%;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.careers-page .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.careers-page .theme-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.careers-page .theme-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+.careers-page .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.contact-map iframe {
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
